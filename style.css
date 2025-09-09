@@ -1,0 +1,51 @@
+/* General Settinga */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: none;
+}
+
+/* Section 1 - SPA Image Banner */
+img {
+    width: 100%;
+}
+#spa-image .image-container {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* bestämmer höjden */
+    overflow: hidden; /* klipper bort överskottet */
+}
+#spa-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ser till att bilden alltid täcker utan att bli ihoptryckt */
+}
+
+#spa-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* overlay */
+#spa-image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(92, 140, 176, 0.5); /* #5c8cb0 med 50% transparens */
+}
+
+/* rubrik */
+#spa-image .image-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    z-index: 1; /* ser till att texten ligger ovanför overlay */
+}
