@@ -49,3 +49,30 @@ img {
     text-align: center;
     z-index: 1; /* ser till att texten ligger ovanför overlay */
 }
+
+/* 2. Section 2 - SPA Info */
+.spa-info {
+    display: flex;
+    flex-direction: column; /* Standard = staplade på mobil */
+    margin-top: 10vh;
+}
+
+/* Boxar */
+#box1 {
+    height: 300px;
+    width: 400px;
+    background-color: blue;
+    margin-right: 50px;
+}
+#box2 {
+    height: 300px;
+    width: 400px;
+    background-color: red;
+}
+
+/* På större skärmar: liggande layout */
+@media (min-width: 768px) {
+    .spa-info {
+        flex-direction: row; /* Nu ligger boxarna bredvid varandra */
+    }
+}
